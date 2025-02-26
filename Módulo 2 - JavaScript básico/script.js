@@ -105,3 +105,13 @@ if(validacao) {
 } else {
     console.log('Acesso negado!')
 }
+
+//Arrow functions - anonymous function (same thing the traditional function)
+// function sum2(a, b) {
+//     return a+b
+// }
+
+// const sum2 = (a,b) => {return a+b}
+const sum2 = (a,b) =>  a + b
+
+console.log(sum2(1,1))
