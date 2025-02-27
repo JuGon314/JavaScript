@@ -114,4 +114,17 @@ if(validacao) {
 // const sum2 = (a,b) => {return a+b}
 const sum2 = (a,b) =>  a + b
 
-console.log(sum2(1,1))
+console.log(sum2(1,99))
+
+// Variables inside functions
+let count = 0; //Global scope
+
+function add() {
+    let count = 0 //Local scope
+    count++
+}
+
+add()
+add()
+
+console.log(count)
