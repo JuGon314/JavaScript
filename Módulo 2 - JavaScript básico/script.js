@@ -128,3 +128,41 @@ add()
 add()
 
 console.log(count)
+
+// Functions inside functions
+function addSquares(a, b) {
+    let square = (x) => {return x * x}
+    return square(a) + square(b)
+}
+
+console.log(addSquares(2, 3))
+
+// Array - how to create and access
+let colors = ["Blue", "Red", "Green"]
+console.log(colors[0])
+
+let list = [
+    "blabla",
+    ["xx", "yy"]
+]
+
+let xx = () => {return list[1]}
+console.log(xx()[0])
+
+// Operations with arrays
+let array = [
+    'this',
+    'is',
+    'an',
+    'array'
+]
+
+array.push('now I did a push') //How to add an item to an array
+
+array.pop() //How to remove tha last item in an array
+
+array.shift() //How to remove the first item in an array
+
+console.log(`Total of words: ${array.length}`) //How to count how many items have in the array
+
+console.log(array)
